@@ -1,4 +1,10 @@
 {
+  "name": "my-project",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
   "devDependencies": {
     "parcel": "^2.8.3"
   }
