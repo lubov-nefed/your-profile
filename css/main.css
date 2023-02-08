@@ -1,3 +1,79 @@
+@import './header/header.css';
+@import './footer/footer.css';
+:root {
+    --main-bg-color: #F1EFE3;
+    --main-text-color: #877A72;
+    --main-accent-color: #5B46AE;
+    --additional-accent-color: #48DFB7;
+}
+.--main-accent-style {    
+    background-color: var(--main-accent-color);
+    color: var(--main-bg-color);
+}
+.--additional-accent-style {    
+    background-color: var(--additional-accent-color);
+    color: var(--main-accent-color);
+}
+.--basic-color-style {    
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+}
 body {
-    background-color: #F1EFE3;
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper  {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto; 
+}
+.btn {
+    cursor: pointer;
+}
+.main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.main__container {
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+.main__heading-img {
+    margin: 30px auto 0;
+}
+.main__subheading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+.main__text {
+    margin-top: 5px;
+    font-size: 32px;
+    line-height: 38px;
+}
+.main__create-btn {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    width: 400px;
+    height: 110px;
+    font-weight: 700;
+    font-size: 36px;
+    border-radius: 50px;
+}
+.main__watch-btn {
+    margin-top: 15px;
+    width: 400px;
+    height: 80px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
 }

@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Your Profile</title>
 </head>
 <body>
-    <header class="header"></header>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header__container container">
+            <a  class="header__link" href="#">
+                <img class="header__logo" src="./images/logo-icon.svg" alt="Your Profile logo">
+            </a>            
+            <button class="header__btn btn --basic-color-style">Login</button>
+        </div>
+    </header>
     <main class="main">
-        <h1 class="main__heading">Your Profile</h1>
+        <div class="main__container container">
+            <p class="main__subheading">welcome to</p>
+            <img class="main__heading-img" src="./images/main-heading-img.svg" alt="Your Profile big logo">            
+            <p class="main__text">a place where you can create your personal profile page</p>
+            <button class="main__create-btn btn --main-accent-style">Create profile</button>
+            <p class="main__text">or</p>
+            <button class="main__watch-btn btn --additional-accent-style">watch examples</button>
+        </div>        
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__container container">
+            <small class="footer__copyright">Copyright © 2022</small>
+            <div class="footer__contacts footer-contacts">
+                <small class="footer-contacts__text">Created by <a class="footer-contacts__gh-link" href="https://github.com/lubov-nefed">Lubov Nefed</a></small>
+                <a class="footer-contacts__link" href="https://lubov-nefed.github.io/rsschool-cv/">
+                    <img class="footer-contacts__img" src="./images/cv-icon.svg" alt="CV icon">                
+                </a>
+                <a class="footer-contacts__link" href="https://linkedin.com/in/lubov-nefed">
+                    <img class="footer-contacts__img" src="./images/linkedin-icon.svg" alt="CV icon">                
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
