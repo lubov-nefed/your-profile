@@ -12,7 +12,10 @@
 .login-form__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 60px;
+
+  /* TODO: Add err class with JS and change margin-bottom to 22px */
 }
 
 .login-form__label {
@@ -59,6 +62,31 @@
   cursor: pointer;
 }
 
+/* TODO: Add .login-form__input--err and .login-form__input--err::placeholder with JS on empty submit */
+
+.login-form__input--err {
+  border: 1px solid #48dfb7;
+  box-shadow: inset 2px 2px 4px 1px rgb(72 223 183 / 50%);
+}
+
+.login-form__input--err::placeholder {
+  color: rgb(6 176 131 / 47%);
+}
+
+.login-form__err-text {
+  display: none;
+  margin-top: 15px;
+  margin-left: 54.9%;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--additional-accent-color);
+}
+
+.login-form__err-link {
+  color: var(--additional-accent-color);
+  text-decoration: underline;
+}
+
 .login-form__terms-of-use {
   text-decoration: underline;
   color: var(--main-accent-color);
@@ -79,8 +107,8 @@
   color: var(--main-accent-color);
   border: solid 2px var(--main-shadow-color);
   box-shadow: 2px 2px 4px 2px var(--main-shadow-color);
-}
 
-/*
-TODO: Add JS onclick event with change color to --main-accent-color
+  /*
+TODO: Add JS onclick event with change background-color to --main-accent-color and color to  --main-bg-color
 */
+}
