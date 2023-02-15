@@ -9,6 +9,7 @@
   --main-accent-color: #5b46ae;
   --additional-accent-color: #48dfb7;
   --main-shadow-color: rgb(91 70 174 / 54%);
+  --main-border-color: #d1c7be;
 }
 
 .main__btn--main-accent-style,
@@ -55,8 +56,8 @@ body {
 }
 
 .main__container {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  /* margin-top: 60px;
+  margin-bottom: 60px; Scroll appears when margins apllied */
   text-align: center;
   color: var(--main-text-color);
 }
