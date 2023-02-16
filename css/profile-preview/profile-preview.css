@@ -1,0 +1,162 @@
+.profile-preview {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-bio {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.profile-bio__img-container {
+  grid-row: 1 / 4;
+  grid-column-start: 3;
+}
+
+.profile-text {
+  text-align: left;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.profile-bio__value,
+.profile-heading,
+.tabs-btns__link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.profile-heading {
+  text-align: left;
+}
+
+.profile-bio__key {
+  text-align: left;
+}
+
+.profile-bio__value {
+  text-align: right;
+  border: 1px solid var(--main-border-color);
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.profile-bio__img-container {
+  padding-left: 26px;
+}
+
+.profile-info__heading {
+  padding-left: 36px;
+  text-align: left;
+}
+
+.profile-info__text {
+  text-align: left;
+  border: 1px solid var(--main-border-color);
+  border-radius: 50px;
+  padding: 28px 88px 28px 42px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.profile-tabs__btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs-btns__link {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 11px 66px;
+}
+
+.tabs-btns__link--active {
+  border: 1px solid #695f59;
+  border-bottom: none;
+}
+
+.profile-tabs__content {
+  border: 1px solid #877a72;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.tabs-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 119px;
+  padding-left: 119px;
+}
+
+.tabs-posts__heading {
+  margin-left: 103px;
+}
+
+.tabs-posts__text {
+  width: 800px;
+  margin-top: 5px;
+  margin-left: 36px;
+  padding: 20px 50px 19px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 50px;
+}
+
+.tabs-comments__post-heading {
+  margin-left: 80px;
+}
+
+.tabs-comments__text {
+  margin-top: 5px;
+  margin-left: 36px;
+  width: 800px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 22px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 50px;
+}
+
+.tabs-contacts {
+  padding: 50px 200px 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile__btns-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile__btn {
+  margin-top: 22px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 30px;
+  padding: 14px 50px;
+}
+
+.profile__like-btn {
+  margin-top: 27px;
+  margin-left: 198px;
+}
+
+.like-btn {
+  display: flex;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #3d269c;
+  background-color: var(--main-bg-color);
+  align-items: center;
+}
+
+.like-btn__text {
+  display: inline-block;
+  margin-left: 15px;
+}
