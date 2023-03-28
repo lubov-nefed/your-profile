@@ -1,22 +1,26 @@
 :root {
-    --header-bg-color: #D2C8BE;
+  --header-bg-color: #d2c8be;
 }
-.header {    
-    background-color: var(--header-bg-color);
+
+.header {
+  background-color: var(--header-bg-color);
 }
+
 .header__container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
+
 .header__logo {
-    margin: 30px 0;
-    cursor: pointer;
+  margin: 30px 0;
+  cursor: pointer;
 }
+
 .header__btn {
-    margin-top: 35px;
-    font-size: 24px;
-    line-height: 28px;
-    width: 150px;
-    height: 50px;
-    border-radius: 20px;
+  margin-top: 35px;
+  font-size: 24px;
+  line-height: 28px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
 }
