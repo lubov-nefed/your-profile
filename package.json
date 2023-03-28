@@ -2,13 +2,12 @@
   "name": "your-profile",
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "private": "true",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "lint:css": "stylelint \"css/**/*.css\"",
-    "fix:css": "npm run lint:css -- --fix",
-    "lint:js": "eslint \"js/**/*.js\"",
-    "fix:js": "npm run lint:js -- --fix"
+    "csslint": "stylelint \"css/**/*.css\"",
+    "cssfix": "npm run lint:css -- --fix",
+    "jslint": "eslint \"js/**/*.js\"",
+    "jsfix": "npm run lint:js -- --fix"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
@@ -16,7 +15,6 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
-    "parcel": "^2.8.3",
     "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0"
   }

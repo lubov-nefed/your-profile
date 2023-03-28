@@ -1,0 +1,41 @@
+<form class="login-form"> //Signin Page
+				<h1 class="login-form__heading">Welcome back!</h1>
+				<div class="login-form__row">
+					<label for="nickname" class="login-form__label">Your name or nickname:</label>
+					<input class="login-form__input" type="text" name="nickname" placeholder="nickname" required>
+				</div>
+				<div class="login-form__row">
+					<label for="e-mail" class="login-form__label">Your e-mail:</label>
+					<input class="login-form__input" type="text" name="e-mail" placeholder="e-mail" required>
+				</div>
+				<div class="login-form__row">
+					<label for="password" class="login-form__label">Your password:</label>
+					<input class="login-form__input" type="password" name="password" placeholder="password" required>
+				</div>
+				<button class="login-form__submit login-form__submit--main-accent-style btn">Login</button>
+			</form>
+
+			<form class="login-form"> //Create account Page
+				<h1 class="login-form__heading">Creating an account</h1>
+				<div class="login-form__row">
+					<label for="nickname" class="login-form__label">Your name or nickname:</label>
+					<input type="text" name="nickname" class="login-form__input" placeholder="nickname" required>
+                    <p class="login-form__err-text">* Please enter your nickname. Have no ideas? Use our <a class="login-form__err-link" href="#">helper.</a></p>
+				</div>
+				<div class="login-form__row">
+					<label for="e-mail" class="login-form__label">Your e-mail:</label>
+					<input type="text" name="e-mail" class="login-form__input" placeholder="e-mail" required>
+                    <p class="login-form__err-text">* Please enter your e-mail.</p>
+				</div>
+				<div class="login-form__row">
+					<label for="password" class="login-form__label">Create strong password:</label>
+					<input type="password" name="password" class="login-form__input" placeholder="password" required>
+                    <p class="login-form__err-text">* Please create a password.</p>
+				</div>
+				<div class="login-form__row">
+					<label for="" class="login-form__label">Confirm <a href="#" class="login-form__terms-of-use" required>terms of use</a></label>
+					<input type="checkbox" name="" class="login-form__input login-form__input--checkbox">
+                    <p class="login-form__err-text">* You need to confirm in order to use Your Profile.</p>
+				</div>
+				<button class="login-form__submit login-form__submit--main-accent-style btn">Create account</button>
+			</form>
