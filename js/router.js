@@ -1,6 +1,6 @@
 import {log} from '../pages/profile-preview/profile-preview.js';
 
-log()
+
 const routes = {
   '/': '/pages/home/index.html',
   '/profile-prevew': '/pages/profile-preview/profile-preview.html',
@@ -12,6 +12,7 @@ const addListeners = (path) => {
   if (path === '/profile-prevew') {    
     const profileBtn = document.querySelector('.profile__btn');
     profileBtn.addEventListener('click', route);
+    log();
   }
 }
 

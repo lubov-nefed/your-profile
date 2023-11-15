@@ -75,9 +75,19 @@
   padding: 11px 66px;
 }
 
+.tabs-btns__link:hover {
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
+}
+
 .tabs-btns__link--active {
   border: 1px solid #695f59;
   border-bottom: none;
+}
+
+.tabs-btns__link--active:hover {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 }
 
 .profile-tabs__content {
@@ -128,6 +138,8 @@
 }
 
 .profile__btns-container {
+  width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -143,8 +155,8 @@
 }
 
 .profile__like-btn {
-  margin-top: 27px;
-  margin-left: 198px;
+  margin-top: 22px;
+  justify-self: end;
 }
 
 .like-btn {
