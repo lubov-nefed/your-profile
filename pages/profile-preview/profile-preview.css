@@ -128,8 +128,8 @@
 }
 
 .profile__btns-container {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .profile__btn {
@@ -139,6 +139,7 @@
   line-height: 28px;
   border-radius: 30px;
   padding: 14px 50px;
+  grid-column-start: 2;
 }
 
 .profile__like-btn {
@@ -159,4 +160,8 @@
 .like-btn__text {
   display: inline-block;
   margin-left: 15px;
+}
+
+.inactive-tab {
+  display: none;
 }

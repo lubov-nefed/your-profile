@@ -1,8 +1,18 @@
+import {log} from '../pages/profile-preview/profile-preview.js';
+
+log()
 const routes = {
   '/': '/pages/home/index.html',
   '/profile-prevew': '/pages/profile-preview/profile-preview.html',
   '/create-account': '/pages/create-account/create-account.html',
   '/login': '/pages/login/login.html',
+}
+
+const addListeners = (path) => {
+  if (path === '/profile-prevew') {    
+    const profileBtn = document.querySelector('.profile__btn');
+    profileBtn.addEventListener('click', route);
+  }
 }
 
 const handleLocation = async () => {
@@ -11,7 +21,9 @@ const handleLocation = async () => {
   const html = await fetch(route).then((data) => data.text());
   let app = document.querySelector('.main__container');
   app.innerHTML = html;
+  addListeners(path);
 }
+
 window.onpopstate = handleLocation;
 
 const route = (event) => {

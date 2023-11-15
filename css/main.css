@@ -25,16 +25,26 @@
   color: var(--main-accent-color);
 }
 
+.main__btn--additional-accent-style:hover {
+  background-color: var(--main-accent-color);
+  color: var(--main-bg-color);
+  border: solid 2px var(--additional-accent-color);
+  box-shadow: 2px 2px 4px 2px var(--main-shadow-color);
+  transition: background-color 0.5s ease-in-out;
+}
+
 .header__btn--basic-color-style {
   background-color: var(--main-text-color);
   color: var(--main-bg-color);
 }
 
+.main__btn--main-accent-style:hover,
 .header__btn--basic-color-style:hover {
   background-color: var(--additional-accent-color);
   color: var(--main-accent-color);
   border: solid 2px var(--main-shadow-color);
   box-shadow: 2px 2px 4px 2px var(--main-shadow-color);
+  transition: background-color 0.5s ease-in-out;
 }
 
 body {
