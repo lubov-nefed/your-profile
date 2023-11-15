@@ -1,6 +1,7 @@
 @import url("header.css");
-@import url("./login-form/login-form.css");
-@import url("./profile-preview/profile-preview.css");
+@import url("../pages/create-account/create-account.css");
+@import url("../pages/login/login.css");
+@import url("../pages/profile-preview/profile-preview.css");
 @import url("footer.css");
 
 :root {
@@ -13,6 +14,7 @@
 }
 
 .main__btn--main-accent-style,
+.create-account-form__submit--main-accent-style,
 .login-form__submit--main-accent-style {
   background-color: var(--main-accent-color);
   color: var(--main-bg-color);
@@ -26,6 +28,13 @@
 .header__btn--basic-color-style {
   background-color: var(--main-text-color);
   color: var(--main-bg-color);
+}
+
+.header__btn--basic-color-style:hover {
+  background-color: var(--additional-accent-color);
+  color: var(--main-accent-color);
+  border: solid 2px var(--main-shadow-color);
+  box-shadow: 2px 2px 4px 2px var(--main-shadow-color);
 }
 
 body {

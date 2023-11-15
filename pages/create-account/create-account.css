@@ -1,0 +1,114 @@
+.create-account-form {
+  color: var(--main-accent-color);
+}
+
+.create-account-form__heading {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 54px;
+  margin-bottom: 68px;
+}
+
+.create-account-form__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  /* TODO: Add err class with JS and change margin-bottom to 22px */
+}
+
+.create-account-form__label {
+  font-size: 38px;
+  line-height: 45px;
+}
+
+.create-account-form__input {
+  background-color: #fff;
+  border: 1px solid #b0aac1;
+  border-radius: 40px;
+  width: 550px;
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 65px;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.create-account-form__input:focus {
+  font-weight: 500;
+  color: #5b46ae;
+  border: 1px solid #5b46ae;
+  outline: none;
+  box-shadow: inset 2px 2px 4px 2px var(--main-shadow-color);
+}
+
+.create-account-form__input::placeholder {
+  color: #b0aac1;
+}
+
+.create-account-form__input:focus::placeholder {
+  font-weight: 400;
+}
+
+.create-account-form__input--checkbox {
+  width: 60px;
+  height: 60px;
+  margin-right: 450px;
+}
+
+.create-account-form__input--checkbox:hover {
+  cursor: pointer;
+}
+
+/* TODO: Add .create-account-form__input--err and .create-account-form__input--err::placeholder with JS on empty submit */
+
+.create-account-form__input--err {
+  border: 1px solid #48dfb7;
+  box-shadow: inset 2px 2px 4px 1px rgb(72 223 183 / 50%);
+}
+
+.create-account-form__input--err::placeholder {
+  color: rgb(6 176 131 / 47%);
+}
+
+.create-account-form__err-text {
+  display: none;
+  margin-top: 15px;
+  margin-left: 54.9%;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--additional-accent-color);
+}
+
+.create-account-form__err-link {
+  color: var(--additional-accent-color);
+  text-decoration: underline;
+}
+
+.create-account-form__terms-of-use {
+  text-decoration: underline;
+  color: var(--main-accent-color);
+}
+
+.create-account-form__submit {
+  width: 400px;
+  height: 90px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.create-account-form__submit:hover {
+  background-color: var(--additional-accent-color);
+  color: var(--main-accent-color);
+  border: solid 2px var(--main-shadow-color);
+  box-shadow: 2px 2px 4px 2px var(--main-shadow-color);
+
+  /*
+TODO: Add JS onclick event with change background-color to --main-accent-color and color to  --main-bg-color
+*/
+}
