@@ -14,9 +14,9 @@ const activateTab = (e) => {
   content.classList.add('active-tab');
 }
 
-function log() {
+function tabsHandler() {
   const tabsBtnsCollection = document.querySelectorAll('.tabs-btns__link');
   tabsBtnsCollection.forEach(btn => btn.addEventListener('click', activateTab));
 }
 
-export { log }
+export { tabsHandler }

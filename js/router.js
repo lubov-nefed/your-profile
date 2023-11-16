@@ -1,4 +1,4 @@
-import {log} from '../pages/profile-preview/profile-preview.js';
+import {tabsHandler} from '../pages/profile-preview/profile-preview.js';
 
 
 const routes = {
@@ -12,7 +12,7 @@ const addListeners = (path) => {
   if (path === '/profile-prevew') {    
     const profileBtn = document.querySelector('.profile__btn');
     profileBtn.addEventListener('click', route);
-    log();
+    tabsHandler();
   }
 }
 
