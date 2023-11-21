@@ -170,6 +170,11 @@
   color: #3d269c;
   background-color: var(--main-bg-color);
   align-items: center;
+  transition: all 0.3s;
+}
+
+.like-btn:hover {
+  transform: scale(1.05);
 }
 
 .like-btn__text {

@@ -27,6 +27,21 @@
 }
 
 .footer-contacts__gh-link {
+  display: inline-block;
   text-decoration: underline;
   color: var(--main-text-color);
+  transition: all 0.3s;
+}
+
+.footer-contacts__gh-link:hover {
+  margin-left: 5px;
+  transform: scale(1.05);
+}
+
+.footer-contacts__svg {
+  transition: all 0.3s;
+}
+
+.footer-contacts__svg:hover {
+  transform: scale(1.1);
 }

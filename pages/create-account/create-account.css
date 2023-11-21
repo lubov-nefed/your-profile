@@ -14,8 +14,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 60px;
-
-  /* TODO: Add err class with JS and change margin-bottom to 22px */
 }
 
 .create-account-form__label {
@@ -62,8 +60,6 @@
   cursor: pointer;
 }
 
-/* TODO: Add .create-account-form__input--err and .create-account-form__input--err::placeholder with JS on empty submit */
-
 .create-account-form__input--err {
   border: 1px solid #48dfb7;
   box-shadow: inset 2px 2px 4px 1px rgb(72 223 183 / 50%);
@@ -90,6 +86,11 @@
 .create-account-form__terms-of-use {
   text-decoration: underline;
   color: var(--main-accent-color);
+  transition: all 0.3s;
+}
+
+.create-account-form__terms-of-use:hover {
+  color: var(--additional-accent-color);
 }
 
 .create-account-form__submit {
@@ -107,8 +108,4 @@
   color: var(--main-accent-color);
   border: solid 2px var(--main-shadow-color);
   box-shadow: 2px 2px 4px 2px var(--main-shadow-color);
-
-  /*
-TODO: Add JS onclick event with change background-color to --main-accent-color and color to  --main-bg-color
-*/
 }

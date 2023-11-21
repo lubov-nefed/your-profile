@@ -1,4 +1,4 @@
-import {tabsHandler} from '../pages/profile-preview/profile-preview.js';
+import {tabsHandler, likeHover} from '../pages/profile-preview/profile-preview.js';
 
 
 const routes = {
@@ -13,6 +13,7 @@ const addListeners = (path) => {
     const profileBtn = document.querySelector('.profile__btn');
     profileBtn.addEventListener('click', route);
     tabsHandler();
+    likeHover();
   }
 }
 
