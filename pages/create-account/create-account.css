@@ -32,13 +32,32 @@
   padding-left: 65px;
   font-size: 36px;
   line-height: 42px;
+  font-weight: 500;
+  color: #5b46ae;
 }
 
 .create-account-form__input:focus {
-  font-weight: 500;
-  color: #5b46ae;
   border: 1px solid #5b46ae;
   outline: none;
+  box-shadow: inset 2px 2px 4px 2px var(--main-shadow-color);
+}
+
+.create-account-form__input:-webkit-autofill,
+.create-account-form__input:-webkit-autofill:hover {
+  border: 1px solid #b0aac1;
+  border-radius: 40px;
+  width: 550px;
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 65px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  -webkit-text-fill-color: #5b46ae;
+}
+
+.create-account-form__input:-webkit-autofill:active {
   box-shadow: inset 2px 2px 4px 2px var(--main-shadow-color);
 }
 
@@ -50,14 +69,45 @@
   font-weight: 400;
 }
 
-.create-account-form__input--checkbox {
-  width: 60px;
-  height: 60px;
-  margin-right: 450px;
+.create-account-form__label--checkbox {
+  position: relative;
+  margin-right: 40%;
 }
 
-.create-account-form__input--checkbox:hover {
+.create-account-form__label--checkbox:hover {
   cursor: pointer;
+}
+
+.create-account-form__input--checkbox {
+  position: absolute;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.custom-checkbox {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: solid 1px var(--main-accent-color);
+  border-radius: 5%;
+  background-color: #fff;
+}
+
+.create-account-form__input--checkbox:focus + .custom-checkbox {
+  border: solid 3px var(--main-accent-color);
+  box-shadow: inset 2px 2px 4px 1px var(--main-shadow-color);
+}
+
+.create-account-form__input--checkbox:checked + .custom-checkbox {
+  border: solid 1px var(--main-accent-color);
+  background-image: url("../../images/checked.svg");
+  background-position: 50% 50%;
+}
+
+.create-account-form__input--checkbox:focus:checked + .custom-checkbox {
+  border: solid 3px var(--additional-accent-color);
+  box-shadow: 2px 2px 6px var(--additional-accent-color);
 }
 
 .create-account-form__input--err {
