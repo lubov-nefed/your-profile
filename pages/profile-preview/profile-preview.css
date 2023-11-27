@@ -1,3 +1,4 @@
+/* stylelint-disable function-url-quotes */
 .profile-preview {
   width: 1000px;
   margin: 0 auto;
@@ -138,6 +139,41 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.tabs-contacts__link {
+  width: 90px;
+  height: 90px;
+  transition: all 0.3s;
+}
+
+.tabs-contacts__link:hover {
+  transform: scale(1.05);
+}
+
+.tabs-contacts__link--instagram {
+  background-image: url(../../images/instagram-logo.svg);
+}
+
+.tabs-contacts__link--instagram:hover {
+  background-image: url(../../images/instagram-logo--hovered.svg);
+}
+
+.tabs-contacts__link--twitter {  
+  height: 70px;
+  background-image: url(../../images/twitter-logo.svg);
+}
+
+.tabs-contacts__link--twitter:hover {
+  background-image: url(../../images/twitter-logo--hovered.svg);
+}
+
+.tabs-contacts__link--facebook {
+  background-image: url(../../images/facebook-logo.svg);
+}
+
+.tabs-contacts__link--facebook:hover {
+  background-image: url(../../images/facebook-logo--hovered.svg);
 }
 
 .profile__btns-container {

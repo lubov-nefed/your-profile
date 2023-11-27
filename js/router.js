@@ -1,4 +1,4 @@
-import {tabsHandler, likeHover} from '../pages/profile-preview/profile-preview.js';
+import {tabsHandler, likeHover } from '../pages/profile-preview/profile-preview.js';
 
 
 const routes = {

@@ -37,15 +37,9 @@
             <p class="tabs-comments__text profile-text">I would love to!</p>
         </div>
         <div class="profile-tabs__content tabs-contacts inactive-tab">
-            <a href="#" class="tabs-contacts__link">                
-                <object type='image/svg+xml' data='../../images/instagram-logo.svg'> Your browser des not support svg format </object>
-            </a>
-            <a href="#" class="tabs-contacts__link">                
-                <object type='image/svg+xml' data='../../images/twitter-logo.svg'> Your browser des not support svg format </object>
-            </a>
-            <a href="#" class="tabs-contacts__link">
-                <object class="tabs-contacts__link-img btn" type='image/svg+xml' data='../../images/facebook-logo.svg'> Your browser des not support svg format </object>
-            </a>
+            <a href="#" class="tabs-contacts__link tabs-contacts__link--instagram"></a>
+            <a href="#" class="tabs-contacts__link tabs-contacts__link--twitter"></a>
+            <a href="#" class="tabs-contacts__link tabs-contacts__link--facebook"></a>
         </div>
     </div>
 
@@ -53,17 +47,8 @@
 <div class="profile__btns-container">
     <button class="profile__btn btn main__btn--main-accent-style" data-path="/create-account">Create your
         profile</button>
-    <button class="profile__like-btn like-btn btn">
-        <svg class="like-btn__svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-            <g clip-path="url(#heart-svg)">
-            <path class="like-btn__svg-path" d="M30 0C13.432 0 0 13.432 0 30C0 46.568 13.432 60 30 60C46.568 60 60 46.568 60 30C60 13.432 46.568 0 30 0ZM30 48C28.629 46.186 9.47 35.117 13.398 22.782C16.928 11.709 28.492 16.185 30 22.188C31.094 16.553 42.949 11.494 46.604 22.772C50.529 34.908 31.367 46.557 30 48Z" fill="#48DFB7"/>
-            </g>
-            <defs>
-            <clipPath id="heart-svg">
-            <rect width="60" height="60" fill="white"/>
-            </clipPath>
-            </defs>
-        </svg>
+    <button class="profile__like-btn like-btn btn">            
+        <img class="like-btn__img" src="../../images/like-icon.svg" alt="Like It">
         <span class="like-btn__text">Like it</span>
     </button>
 </div>

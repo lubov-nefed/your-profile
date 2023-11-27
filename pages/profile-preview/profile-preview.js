@@ -18,21 +18,20 @@ function tabsHandler() {
 }
 
 
-
 function likeHover() {
   const likeBtn = document.querySelector('.profile__like-btn');
-  const svg = document.querySelector('.like-btn__svg-path');
-  const likeText = document.querySelector('.like-btn__text');
-  const mouseenterHandler = () => {
-    svg.style.fill = '#5b46ae';
-    likeText.style.color = '#48dfb7'
+  const likeBtnImg = document.querySelector('.like-btn__img');
+  const likeBtnText = document.querySelector('.like-btn__text');
+  const mouseenterHandler = () => {    
+    likeBtnImg.src = '../../images/like-icon--hovered.svg';
+    likeBtnText.style.color = 'var(--additional-accent-color)';
   };
   const mouseleaveHandler = () => {
-    svg.style.fill = '#48dfb7';
-    likeText.style.color = '#5b46ae'
+    likeBtnImg.src = '../../images/like-icon.svg';
+    likeBtnText.style.color = 'var(--main-accent-color)';
   }
   likeBtn.addEventListener('mouseenter', mouseenterHandler);
   likeBtn.addEventListener('mouseleave', mouseleaveHandler);
 }
 
-export { tabsHandler, likeHover }
+export { tabsHandler, likeHover}
