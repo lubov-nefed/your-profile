@@ -1,4 +1,5 @@
-import {tabsHandler, likeHover } from '../pages/profile-preview/profile-preview.js';
+import { tabsHandler, likeHover } from '../pages/profile-preview/profile-preview.js';
+import { validateForm } from '../pages/create-account/create-account.js'
 
 
 const routes = {
@@ -14,6 +15,10 @@ const addListeners = (path) => {
     profileBtn.addEventListener('click', route);
     tabsHandler();
     likeHover();
+  }
+  if (path === '/create-account') {
+    const createAccountForm = document.querySelector('.create-account-form');
+    createAccountForm.addEventListener('submit',validateForm);
   }
 }
 
