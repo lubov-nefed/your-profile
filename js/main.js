@@ -1,5 +1,6 @@
 import { tabsHandler, likeHover } from '../pages/profile-preview/profile-preview.js';
-import { validateForm } from '../pages/create-account/create-account.js'
+import { validateForm } from '../pages/create-account/create-account.js';
+import {toggleTheme} from './toggle-theme.js';
 
 
 const routes = {
@@ -39,13 +40,14 @@ const route = (event) => {
   handleLocation();
 };
 
-
 handleLocation()
   .then(() => {
     const createBtn = document.querySelector('.create-btn');
     const watchBtn = document.querySelector('.watch-btn'); 
     const loginBtn = document.querySelector('.login-btn');
+    const themeBtn = document.querySelector('.header__theme-btn');
     createBtn.addEventListener('click', route);
     watchBtn.addEventListener('click', route);
     loginBtn.addEventListener('click', route);
+    themeBtn.addEventListener('click', toggleTheme)
 });

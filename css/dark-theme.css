@@ -5,14 +5,14 @@
 @import url("footer.css");
 
 :root {
-  --main-bg-color: #f1efe3;
-  --main-text-color: #877a72;
-  --additional-text-color: #5b46ae;
+  --main-bg-color: linear-gradient(178deg, #0e0142 19.61%, #1f105a 40.7%, #0a0323 87.25%);
+  --main-text-color: #ffff;
+  --additional-text-color: #ffff;
   --main-accent-color: #5b46ae;
   --additional-accent-color: #48dfb7;
   --main-shadow-color: rgb(91 70 174 / 54%);
-  --main-border-color: #d1c7be;
-  --header-bg-color: #d2c8be;
+  --main-border-color: #5b46ae;
+  --header-bg-color: #5b46ae;
 }
 
 .main__btn--main-accent-style,
@@ -50,7 +50,7 @@
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background: var(--main-bg-color);
   font-family: Roboto, sans-serif;
 }
 

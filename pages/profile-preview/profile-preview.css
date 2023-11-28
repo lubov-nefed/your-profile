@@ -1,7 +1,7 @@
 /* stylelint-disable function-url-quotes */
 .profile-preview {
   width: 1000px;
-  margin: 0 auto;
+  margin: 2em auto 0;
 }
 
 .profile-bio {
@@ -178,7 +178,7 @@
 
 .profile__btns-container {
   width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }

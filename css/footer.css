@@ -1,6 +1,10 @@
 .footer {
-  border: solid 1px var(--main-text-color);
+  border: solid 1px var(--main-border-color);
   color: var(--main-text-color);
+}
+
+.undisplayed {
+  display: none;
 }
 
 .footer__container {
@@ -38,10 +42,10 @@
   transform: scale(1.05);
 }
 
-.footer-contacts__svg {
+.footer-contacts__img {
   transition: all 0.3s;
 }
 
-.footer-contacts__svg:hover {
+.footer-contacts__img:hover {
   transform: scale(1.1);
 }

@@ -1,9 +1,9 @@
-:root {
-  --header-bg-color: #d2c8be;
-}
-
 .header {
   background-color: var(--header-bg-color);
+}
+
+.undisplayed {
+  display: none;
 }
 
 .header__container {
@@ -14,7 +14,7 @@
 .header__logo {
   margin: 30px 0;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .header__logo:hover {
@@ -22,11 +22,20 @@
   filter: drop-shadow(2px 4px var(--additional-accent-color));
 }
 
+.header__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 2em;
+}
+
 .header__btn {
-  margin-top: 35px;
   font-size: 24px;
   line-height: 28px;
   width: 150px;
   height: 50px;
   border-radius: 20px;
+}
+
+.header__theme-btn {
+  background-color: var(--header-bg-color);
 }
