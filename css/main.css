@@ -4,6 +4,10 @@
 @import url("../pages/profile-preview/profile-preview.css");
 @import url("footer.css");
 
+/* ToDo
+1. Fix anchors paddings
+2. Fix responsiveness */
+
 :root {
   --main-bg-color: #f1efe3;
   --main-text-color: #877a72;
