@@ -79,19 +79,31 @@
                     <button class="header__theme-btn btn">
                         <img class="theme-btn__img" src="images/light-dark-icon.svg" alt="Switch theme">
                     </button>
-                    <a class="header__btn btn header__btn--basic-color-style login-btn" href="pages/login/login.html"> Login</a>
+                    <a class="header__btn btn header__btn--basic-color-style login-btn" href="pages/login/login.html">
+                        Login</a>
                 </div>
             </div>
         </header>
         <main class="main">
             <div class="main__container container">
                 <p class="main__subheading">welcome to</p>
-                <img class="main__heading-img" src="./images/main-heading-img.svg" alt="Your Profile big logo">
+                <img class="main__heading-img"
+                    srcset="
+                    ./images/main-heading-img-608w.svg 608w,
+                    ./images/main-heading-img-421w.svg 421w,
+                    ./images/main-heading-img-168w.svg 168w"
+                    sizes="
+                    (min-width:1200px) 608px,
+                    (min-width: 700px) 421px,
+                    (max-width: 699px) 168px"
+                    src="./images/main-heading-img-608w.svg" alt="Your Profile big logo">
                 <p class="main__text">a place where you can create your personal profile page</p>
                 <div class="main__btn-container">
-                        <a class="main__btn btn main__btn--main-accent-style create-btn" href="pages/create-account/create-account.html"> Create profile</a>
+                    <a class="main__btn btn main__btn--main-accent-style create-btn"
+                        href="pages/create-account/create-account.html"> Create profile</a>
                     <p class="main__text">or</p>
-                    <a class="main__btn btn main__btn--additional-accent-style watch-btn" href="pages/profile-preview/profile-preview.html">watch example</a>
+                    <a class="main__btn btn main__btn--additional-accent-style watch-btn"
+                        href="pages/profile-preview/profile-preview.html">watch example</a>
                 </div>
 
             </div>
@@ -99,9 +111,9 @@
         <footer class="footer">
             <div class="footer__container container">
                 <small class="footer__copyright">Copyright © 2022</small>
-                <div class="footer__contacts footer-contacts">
-                    <small class="footer-contacts__text">Created by <a class="footer-contacts__gh-link"
-                            href="https://github.com/lubov-nefed">Lubov Nefed</a></small>
+                <small class="footer-contacts__text">Created by <a class="footer-contacts__gh-link"
+                        href="https://github.com/lubov-nefed">Lubov Nefed</a></small>
+                <div class="footer__links">
                     <a class="footer-contacts__link" href="https://lubov-nefed.github.io/rsschool-cv/">
                         <img class="footer-contacts__img footer-contacts__cv" src="images/cv-icon.svg"
                             alt="Go to cv webpage">

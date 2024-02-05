@@ -1,3 +1,44 @@
 @media screen and (min-width: 700px) and (max-width: 1199px) {
-  
+  .container {
+    max-width: 700px;
+  }
+
+  .main__container {
+    margin-top: 60px;
+  }
+
+  .main__subheading {
+    font-size: 24px;
+  }
+
+  .main__text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .main__btn-container {
+    margin: 60px auto 0;
+    width: 200px;
+  }
+
+  .main__btn-container .main__text {
+    margin-bottom: 10px;
+  }
+
+  .main__btn {
+    height: 50px;
+    padding-top: 14px;
+    font-size: 20px;
+  }
+
+  .footer__container {
+    grid-template-areas: 
+    "footer__copyright footer__links"
+    "footer-contacts__text footer__links";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__links {
+    justify-self: end;
+  }
 }

@@ -67,6 +67,7 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn {
@@ -87,18 +88,25 @@ body {
 
 .main__subheading {
   font-weight: 700;
+  line-height: 116%;
+}
+
+.main__text {
+  line-height: 116%;
 }
 
 .main__btn {
   width: 100%;
   font-weight: 700;
+  line-height: 116%;
 }
 
 .create-btn {
   display: inline-block;
-  line-height: 116%;
+  border-radius: 50px;
 }
 
 .watch-btn {
   display: inline-block;
+  border-radius: 40px;
 }

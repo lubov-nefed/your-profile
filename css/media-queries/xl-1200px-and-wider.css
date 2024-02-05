@@ -1,6 +1,10 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .main {
+    margin-top: 60px;
   }
 
   .main__heading-img {
@@ -9,34 +13,49 @@
 
   .main__subheading {
     font-size: 36px;
-    line-height: 42px;
   }
 
   .main__btn-container {
-    margin: 100px auto 0;
+    margin: 90px auto 0;
     width: 400px;
   }
 
   .main__text {
     margin-top: 5px;
     font-size: 32px;
-    line-height: 38px;
+  }
+
+  .main__btn-container .main__text {
+    margin: 15px 0;
   }
 
   .create-btn {
-    margin-bottom: 15px;
     height: 110px;
     font-size: 36px;
-    border-radius: 50px;
     padding-top: 33px;
   }
 
   .watch-btn {
-    margin-top: 15px;
     height: 80px;
-    border-radius: 40px;
     font-size: 28px;
     line-height: 33px;
     padding-top: 22px;
+  }
+
+  .footer {
+    margin-top: 90px;
+  }
+
+  .footer__container {
+    grid-template-areas: "footer__copyright footer-contacts__text footer__links";
+    grid-template-columns: 3fr 1fr 0.4fr;
+  }
+
+  .footer-contacts__text {
+    text-align: right;
+  }
+
+  .footer__links {
+    justify-content: end;
   }
 }
