@@ -29,13 +29,18 @@
 }
 
 .header__btn {
+}
+
+.header__theme-btn {
+  background-color: var(--header-bg-color);
+}
+
+.login-btn {
   font-size: 24px;
   line-height: 28px;
   width: 150px;
   height: 50px;
   border-radius: 20px;
-}
-
-.header__theme-btn {
-  background-color: var(--header-bg-color);
+  text-align: center;
+  padding-top: 11px;
 }

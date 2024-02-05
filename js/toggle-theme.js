@@ -30,14 +30,14 @@ const getFooterElements = () => {
   return [cvLink, linkedIn]
 }
 
-const getCurrentTheme = () => {  
-  const cssHref = styleLinkElem.getAttribute('href');
-  const isLight = cssHref === themeData.light.href;
+const whatThemeSwitchTo = () => {  
+  const styleLinkHref = styleLinkElem.getAttribute('href');
+  const isLight = styleLinkHref === themeData.light.href;
   return isLight ? 'dark' : 'light'
 }
 
-const changeHeaderLogo = (switchTo, headerLogoLight, headerLogoDark) => {
-  if (switchTo === 'dark' ) {
+const changeHeaderLogo = (themeSwitchTo, headerLogoLight, headerLogoDark) => {
+  if (themeSwitchTo === 'dark' ) {
     headerLogoLight.classList.add('undisplayed');
     headerLogoDark.classList.remove('undisplayed');
   } else {      
@@ -50,18 +50,18 @@ const toggleTheme = () => {
   let [headerLogoLight, headerLogoDark, themeBtn] = getHeaderElements();
   let [cvLink, linkedIn] = getFooterElements();
   const mainLogo = document.querySelector('.main__heading-img');
-  let switchTo =  getCurrentTheme();
+  let themeSwitchTo =  whatThemeSwitchTo();
 
-  const applyStyles = (switchTo) => {
-    styleLinkElem.href = themeData[switchTo].href;
-    changeHeaderLogo(switchTo, headerLogoLight, headerLogoDark);
-    themeBtn.src = themeData[switchTo].themeBtnSrc;
-    if (mainLogo) mainLogo.src = themeData[switchTo].mainLogoSrc;  
-    cvLink.src = themeData[switchTo].cvSrc;
-    linkedIn.src = themeData[switchTo].linkedInSrc;
+  const applyStyles = (theme) => {
+    styleLinkElem.href = themeData[theme].href;
+    changeHeaderLogo(theme, headerLogoLight, headerLogoDark);
+    themeBtn.src = themeData[theme].themeBtnSrc;
+    if (mainLogo) mainLogo.src = themeData[theme].mainLogoSrc;  
+    cvLink.src = themeData[theme].cvSrc;
+    linkedIn.src = themeData[theme].linkedInSrc;
   }
 
-  applyStyles(switchTo);
+  applyStyles(themeSwitchTo);
 }
 
 export { toggleTheme }
