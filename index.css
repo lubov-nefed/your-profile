@@ -1,12 +1,12 @@
-@import url("components/header.css");
-@import url("../pages/create-account/create-account.css");
-@import url("../pages/login/login.css");
-@import url("../pages/profile-preview/profile-preview.css");
-@import url("components/footer.css");
-@import url("media-queries/xl-1200px-and-wider.css");
-@import url("media-queries/large-700px-1199px.css");
-@import url("media-queries/medium-400px-699px.css");
-@import url("media-queries/small-399px-and-narrower.css");
+@import url("common-blocks/header/header.css");
+@import url("pages/create-account/create-account.css");
+@import url("pages/login/login.css");
+@import url("pages/profile-preview/profile-preview.css");
+@import url("common-blocks/footer/footer.css");
+@import url("css/media-queries/xl-1200px-and-wider.css");
+@import url("css/media-queries/large-700px-1199px.css");
+@import url("css/media-queries/medium-400px-699px.css");
+@import url("css/media-queries/small-399px-and-narrower.css");
 
 
 :root {
