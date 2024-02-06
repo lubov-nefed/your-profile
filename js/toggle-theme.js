@@ -12,7 +12,7 @@ const themeData = {
     href: './css/dark-theme.css',
     mainLogoSrc: './images/main-heading-img--dark-theme.svg',
     themeBtnSrc: './images/light-dark-icon--dark-theme.svg',
-    cvSrc: 'images/cv-icon--dark-theme.svg',
+    cvSrc: 'images/cv-icon-31w--dark-theme.svg',
     linkedInSrc: 'images/linkedin-icon--dark-theme.svg'
   }
 }
